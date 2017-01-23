@@ -5,7 +5,7 @@
 #' @keywords: None
 #' @export
 #' @examples
-#' trial
+#' cat_function()
 
 cat_function <- function(){
   print("Hello World")

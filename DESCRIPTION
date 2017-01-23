@@ -1,12 +1,21 @@
 Package: SpatNet
 Type: Package
-Title: Visualization and analytic metrics for spatial social networks
+Title: Spatial Social Networks
 Version: 0.1.0
-Author: Dipto Sarkar
+Authors@R: person("Dipto", "Sarkar", email = "dipto.sarkar@mail.mcgill.ca",
+                  role = c("aut", "cre"))
 Maintainer: Dipto Sarkar <dipto.sarkar@mail.mcgill.ca>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: Visualization and analytic metrics for spatial social networks
+License: Apache License V2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1
+BugReports: https://github.com/diptosarkar/SpatNet/issues
+Imports:
+    igraph,
+    ggplot2,
+    maptools,
+    spatstat,
+    rgdal,
+    directlabels,
+    data.table

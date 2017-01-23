@@ -13,7 +13,7 @@ cat_function()
 This function allows you to express your love of Hello World
 }
 \examples{
-trial
+cat_function()
 }
 \keyword{:}
 \keyword{None}
