@@ -1,11 +1,12 @@
 Package: SpatNet
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Visualization and analytic metrics for spatial social networks
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Dipto Sarkar
+Maintainer: Dipto Sarkar <dipto.sarkar@mail.mcgill.ca>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 5.0.1
