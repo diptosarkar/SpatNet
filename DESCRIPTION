@@ -14,6 +14,7 @@ BugReports: https://github.com/diptosarkar/SpatNet/issues
 Imports:
     igraph,
     ggplot2,
+    ggbeeswarm,
     maptools,
     spatstat,
     rgdal,
