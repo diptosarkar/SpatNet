@@ -10,7 +10,7 @@
 #'
 #' @export
 #' @examples
-#' spatial_sociogram()
+#'
 
 
 spatial_sociogram<-function(graph, v_color='gray', v_lab_color="black", e_width=2){

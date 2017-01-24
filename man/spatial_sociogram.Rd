@@ -20,7 +20,7 @@ spatial_sociogram(graph, v_color = "gray", v_lab_color = "black",
 This function creates a sociogram where the relative position of the nodes with respect to each other are preserved
 }
 \examples{
-spatial_sociogram()
+
 }
 \keyword{:}
 \keyword{sociogram}
