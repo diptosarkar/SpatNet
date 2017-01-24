@@ -7,7 +7,7 @@
 #' @param: e_width: edge widths. Default=2
 #'
 #' @keywords: spatial sociogram
-#'
+#' @import igraph data.table
 #' @export
 #' @examples
 #'

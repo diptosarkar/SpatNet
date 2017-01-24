@@ -5,9 +5,10 @@
 #' @param: resolution specifies the grouping of points for numbering. Defaults to NA and numbering cannot be performed
 #' @param: num specifies whether points should be aggregated and numbered. Requires resolution to be specified
 #' @keywords: spatial clustering
+#' @import data.table ggplot2
 #' @export
 #' @examples
-#' structure_viz()
+#'
 
 
 structure_viz<-function(graph, resolution=FALSE, num=FALSE){
@@ -38,7 +39,7 @@ structure_viz<-function(graph, resolution=FALSE, num=FALSE){
 
     library(ggbeeswarm)
     commonTheme = list(labs(color="Density",fill="Density",
-                            x="Euclidean Distance [Km]",
+                            x="Euclidean Distance [measurement units]",
                             y="Shortest Path Distance"),
                        theme_bw(),
                        theme(legend.position="none",  #c(0,1),
@@ -49,7 +50,6 @@ structure_viz<-function(graph, resolution=FALSE, num=FALSE){
     }
     else if(num){
       if(resolution!=FALSE){
-        print("here")
         ub<-max(for_plot$euc_dist)+10000;lb<-min(for_plot$euc_dist)
         analysis_scale<-resolution
         breaks = seq(lb, ub, by=analysis_scale)

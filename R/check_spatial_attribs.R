@@ -4,8 +4,7 @@
 #' @param: igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
 #'
 #' @keywords: check attributes
-#' @references
-#'
+#' @import igraph
 #' @examples
 #' spat_degree_change_graph()
 

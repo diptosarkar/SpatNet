@@ -17,7 +17,7 @@ structure_viz(graph, resolution = FALSE, num = FALSE)
 This function allows you to express your love of Hello World
 }
 \examples{
-structure_viz()
+
 }
 \keyword{:}
 \keyword{clustering}
