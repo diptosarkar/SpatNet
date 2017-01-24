@@ -15,8 +15,10 @@ This function checks whether the graph passsed as an argument has X and Y attrib
 \examples{
 spat_degree_change_graph()
 }
+\references{
+
+}
 \keyword{:}
-\keyword{degree}
-\keyword{graph}
-\keyword{spatial}
+\keyword{attributes}
+\keyword{check}
 

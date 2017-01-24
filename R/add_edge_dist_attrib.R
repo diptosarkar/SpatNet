@@ -4,15 +4,10 @@
 #' @param: igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
 #'
 #' @keywords: check attributes
-#' @references
-#' @export
-#' @examples
-#' add_edge_dist_attrib()
 
-require(maptools)
-require(spatstat)
-require(rgdal)
-require(data.table)
+
+
+
 
 add_edge_dist_attrib<-function(graph){
   if(check_spatial_attribs(graph)){

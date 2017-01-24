@@ -2,8 +2,8 @@
 
 export(cat_function)
 export(check_connection_distance_distribution)
-export(check_spatial_attribs)
 export(check_spatial_clustering)
 export(spat_degree)
 export(spat_degree_change_graph)
+export(spatial_sociogram)
 export(structure_viz)

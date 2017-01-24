@@ -7,12 +7,11 @@
 #' @param: e_width: edge widths. Default=2
 #'
 #' @keywords: spatial sociogram
-#' @references
+#'
 #' @export
 #' @examples
 #' spatial_sociogram()
 
-require(igraph)
 
 spatial_sociogram<-function(graph, v_color='gray', v_lab_color="black", e_width=2){
   if(check_spatial_attribs(graph)){
