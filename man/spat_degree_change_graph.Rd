@@ -22,7 +22,7 @@ spat_degree_change_graph(graph, transparency = TRUE, from_alpha = 0,
 This function creates the graph of spatial degree rank change between alpha values. Seems to not work if modying only from_alpha or to_alpha
 }
 \examples{
-
+spat_degree_change_graph()
 }
 \keyword{degree}
 \keyword{graph}
