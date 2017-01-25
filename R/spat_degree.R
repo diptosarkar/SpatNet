@@ -1,6 +1,6 @@
 #' Calculate Spatial Degree
 #'
-#' This function allows you to express your love of Hello World
+#' This function allows you to calculate spatial degree of nodes at a particular alpha
 #' @param graph igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node.
 #' @param alpha specifies alpha value at which degree is to be calculted
 #' @param rank decides whether to return rank of nodes of raw values. Defaults to TRUE meaning ranks are to be calculated
