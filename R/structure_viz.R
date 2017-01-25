@@ -1,9 +1,9 @@
-#' A trial Function
+#' Plot Structure Diagaram
 #'
-#' This function allows you to express your love of Hello World
-#' @param: igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node.
-#' @param: resolution specifies the grouping of points for numbering. Defaults to NA and numbering cannot be performed
-#' @param: num specifies whether points should be aggregated and numbered. Requires resolution to be specified
+#' This function plots the structure diagram for spatial social networks
+#' @param graph igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node.
+#' @param resolution specifies the grouping of points for numbering. Defaults to NA and numbering cannot be performed
+#' @param num specifies whether points should be aggregated and numbered. Requires resolution to be specified
 #' @keywords: spatial clustering
 #' @import data.table ggplot2
 #' @export

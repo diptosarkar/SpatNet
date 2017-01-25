@@ -2,22 +2,24 @@
 % Please edit documentation in R/spat_degree.R
 \name{spat_degree}
 \alias{spat_degree}
-\title{A trial Function}
+\title{Calculate Spatial Degree}
 \usage{
 spat_degree(graph, alpha, rank = TRUE)
 }
 \arguments{
-\item{:}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
-alpha at which the calculation is to be done
-rank specifies whether the ranks of the nodes relativr at the specified alpha is to be returned instead of the their raw spatial degree value. Defaults to TRUE}
+\item{graph}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node.}
+
+\item{alpha}{specifies alpha value at which degree is to be calculted}
+
+\item{rank}{decides whether to return rank of nodes of raw values. Defaults to TRUE meaning ranks are to be calculated}
 }
 \description{
 This function allows you to express your love of Hello World
 }
 \examples{
-spat_degree()
+
 }
 \keyword{:}
-\keyword{degree}
+\keyword{clustering}
 \keyword{spatial}
 

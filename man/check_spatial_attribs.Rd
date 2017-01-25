@@ -7,7 +7,7 @@
 check_spatial_attribs(graph)
 }
 \arguments{
-\item{:}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
+\item{graph}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
 }
 \description{
 This function checks whether the graph passsed as an argument has X and Y attributes

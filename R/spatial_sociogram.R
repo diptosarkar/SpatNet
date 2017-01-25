@@ -1,10 +1,10 @@
-#' Spatial Sociogram Function
+#' Plot Spatial Sociogram
 #'
 #' This function creates a sociogram where the relative position of the nodes with respect to each other are preserved
-#' @param: igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
-#' @param: v_color: color of the vertices. Default=gray
-#' @param: v_lab_color: color of the vertex labels. Default=black
-#' @param: e_width: edge widths. Default=2
+#' @param graph igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
+#' @param v_color color of the vertices. Default=gray
+#' @param v_lab_color color of the vertex labels. Default=black
+#' @param e_width edge widths. Default=2
 #'
 #' @keywords: spatial sociogram
 #' @import igraph data.table

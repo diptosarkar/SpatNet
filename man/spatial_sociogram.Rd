@@ -2,19 +2,19 @@
 % Please edit documentation in R/spatial_sociogram.R
 \name{spatial_sociogram}
 \alias{spatial_sociogram}
-\title{Spatial Sociogram Function}
+\title{Plot Spatial Sociogram}
 \usage{
 spatial_sociogram(graph, v_color = "gray", v_lab_color = "black",
   e_width = 2)
 }
 \arguments{
-\item{:}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
+\item{graph}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
 
-\item{:}{v_color: color of the vertices. Default=gray}
+\item{v_color}{color of the vertices. Default=gray}
 
-\item{:}{v_lab_color: color of the vertex labels. Default=black}
+\item{v_lab_color}{color of the vertex labels. Default=black}
 
-\item{:}{e_width: edge widths. Default=2}
+\item{e_width}{edge widths. Default=2}
 }
 \description{
 This function creates a sociogram where the relative position of the nodes with respect to each other are preserved

@@ -4,7 +4,7 @@ Title: Spatial Social Networks
 Version: 0.1.0
 Authors@R: person("Dipto", "Sarkar", email = "dipto.sarkar@mail.mcgill.ca", role = c("aut", "cre"))
 Maintainer: Dipto Sarkar <dipto.sarkar@mail.mcgill.ca>
-Description: Visualization and analytic metrics for spatial social networks
+Description: Visualization and analytic metrics for spatial social networks.
 License: Apache License V2
 Encoding: UTF-8
 LazyData: true

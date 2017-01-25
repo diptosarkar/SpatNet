@@ -1,7 +1,7 @@
 #' Validation Function
 #'
 #' This function adds a dist attribute to edges as a measure of the Euclidean distance of the connection
-#' @param: igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
+#' @param graph igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
 #' @import data.table igraph
 #' @keywords: check attributes
 

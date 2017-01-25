@@ -2,24 +2,28 @@
 % Please edit documentation in R/spat_degree_change_graph.R
 \name{spat_degree_change_graph}
 \alias{spat_degree_change_graph}
-\title{A trial Function}
+\title{Graph Degree Rank change}
 \usage{
 spat_degree_change_graph(graph, transparency = TRUE, from_alpha = 0,
-  to_alpha = 1)
+  to_alpha = 1, step = 0.05)
 }
 \arguments{
-\item{:}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
-tranparency specifies whether lines in the graph are highlighted according to the maximum rank changes
-from_alpha specifies start alpha value of spatial degree calculation
-to_alpha specifies end alpha value of spatial degree calculation}
+\item{graph}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
+
+\item{from_alpha}{specifies start alpha value of spatial degree calculation. Defaults to 0}
+
+\item{to_alpha}{specifies end alpha value of spatial degree calculation. Defaults to 1}
+
+\item{step}{species the interval at which the alpha values are to be calculated. Defaults to 0.05}
+
+\item{tranparency}{specifies whether lines in the graph are highlighted according to the maximum rank changes. Defaults to TRUE}
 }
 \description{
-This function allows you to express your love of Hello World
+This function creates the graph of spatial degree rank change between alpha values. Seems to not work if modying only from_alpha or to_alpha
 }
 \examples{
-spat_degree_change_graph()
+
 }
-\keyword{:}
 \keyword{degree}
 \keyword{graph}
 \keyword{spatial}

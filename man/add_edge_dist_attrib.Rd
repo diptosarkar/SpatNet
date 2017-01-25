@@ -7,7 +7,7 @@
 add_edge_dist_attrib(graph)
 }
 \arguments{
-\item{:}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
+\item{graph}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
 }
 \description{
 This function adds a dist attribute to edges as a measure of the Euclidean distance of the connection
