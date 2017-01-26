@@ -16,4 +16,6 @@ Imports:
     ggbeeswarm,
     spatstat,
     directlabels,
+    maptools,
+    sp,
     data.table
