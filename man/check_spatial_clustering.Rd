@@ -7,10 +7,10 @@
 check_spatial_clustering(graph)
 }
 \arguments{
-\item{:}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
+\item{graph}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
 }
 \description{
-This function allows you to express your love of Hello World
+This function creates a graph for iterative Ripley's K function to check for spatial clusetring of nodes
 }
 \examples{
 check_spatial_clustering()

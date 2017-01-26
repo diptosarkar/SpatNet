@@ -9,8 +9,7 @@
 #' @import igraph data.table ggplot2 directlabels ggbeeswarm
 #' @keywords spatial degree graph
 #' @export
-#' @examples
-#' spat_degree_change_graph()
+#'
 
 
 

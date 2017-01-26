@@ -5,7 +5,7 @@
 #' @param resolution specifies the grouping of points for numbering. Defaults to NA and numbering cannot be performed
 #' @param num specifies whether points should be aggregated and numbered. Requires resolution to be specified
 #' @keywords: spatial clustering
-#' @import data.table ggplot2
+#' @import data.table ggplot2 ggbeeswarm
 #' @export
 #' @examples
 #'

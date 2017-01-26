@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R: person("Dipto", "Sarkar", email = "dipto.sarkar@mail.mcgill.ca", role = c("aut", "cre"))
 Maintainer: Dipto Sarkar <dipto.sarkar@mail.mcgill.ca>
 Description: Visualization and analytic metrics for spatial social networks.
-License: Apache License V2
+License: Apache-2.0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1
@@ -14,8 +14,6 @@ Imports:
     igraph,
     ggplot2,
     ggbeeswarm,
-    maptools,
     spatstat,
-    rgdal,
     directlabels,
     data.table

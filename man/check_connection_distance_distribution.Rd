@@ -2,18 +2,17 @@
 % Please edit documentation in R/check_connection_distance_distribution.R
 \name{check_connection_distance_distribution}
 \alias{check_connection_distance_distribution}
-\title{A trial Function}
+\title{This function creates a density plot for checking distance of connections}
 \usage{
-check_connection_distance_distribution(graph)
+check_connection_distance_distribution(graph, bins = 30)
 }
 \arguments{
-\item{:}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
+\item{graph}{igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node}
+
+\item{bins}{number of bins for the histogram. Defaults to 30}
 }
 \description{
-This function allows you to express your love of Hello World
-}
-\examples{
-check_connection_distance_distribution()
+This function creates a density plot for checking distance of connections
 }
 \keyword{:}
 \keyword{clustering}
