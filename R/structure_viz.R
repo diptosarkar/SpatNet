@@ -41,7 +41,7 @@ structure_viz<-function(graph, resolution=FALSE, num=FALSE){
     commonTheme = list(labs(color="Density",fill="Density",
                             x="Euclidean Distance [measurement units]",
                             y="Shortest Path Distance"),
-                       theme_bw(),
+                       theme_bw(base_size=12),
                        theme(legend.position="none",  #c(0,1),
                              legend.justification=c(0,1)))
 
@@ -61,7 +61,7 @@ structure_viz<-function(graph, resolution=FALSE, num=FALSE){
         for_plot$euc_dist_classified<-midpoints(cut(for_plot$euc_dist,breaks, right = F))
         for_plot[,count:=.N, by=list(euc_dist_classified,shortest_path)]
 
-        p<-ggplot(data=for_plot,aes(x=euc_dist_classified/1000, y=shortest_path, label=count))+geom_quasirandom(alpha=0.2)+geom_text()+commonTheme  #geom_beeswarm
+        p<-ggplot(data=for_plot,aes(x=euc_dist_classified/1000, y=shortest_path, label=count))+geom_quasirandom(alpha=0.2)+geom_text(size=6)+commonTheme  #geom_beeswarm
         #p#+geom_vline(xintercept=max(dist_mat)/1000, linetype="longdash") #Line to denote spatial extent #This can be added later via an additional param
         print(p)
 

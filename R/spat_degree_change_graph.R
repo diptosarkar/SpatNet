@@ -69,12 +69,12 @@ spat_degree_change_graph<-function(graph, transparency = TRUE, from_alpha = 0, t
     if(transparency){
       #The following plot utilizes the max change in rank and highlights the vertices that have shown big changes
       plt<-ggplot(data=for_plot, aes(x=alpha, y=alpha_rank, group=vertex_name, color=max_rank_change))
-      plt<-plt+geom_line()+geom_point()+geom_dl(aes(label = vertex_name), method = list(dl.combine("first.points", "last.points"), cex = 0.8))+theme_bw()+theme(legend.position="none")+xlab(expression(alpha))+ylab("Alpha Rank of Node's Degree")
+      plt<-plt+geom_line()+geom_point()+geom_dl(aes(label = vertex_name), method = list(dl.combine("first.points", "last.points"), cex = 1.5))+theme_bw()+theme(legend.position="none")+xlab(expression(alpha))+ylab("Alpha Rank of Node's Degree")
       plt+scale_color_gradient2(low='blue', high='black')  #The low does not seem to work, for desired color gradient change high
     }
     else if(!transparency){
       plt<-ggplot(data=for_plot, aes(x=alpha, y=alpha_rank, group=vertex_name))
-      plt<-plt+geom_line()+geom_point()+geom_dl(aes(label = vertex_name), method = list(dl.combine("first.points", "last.points"), cex = 0.8))+theme_bw()+theme(legend.position="none")+xlab(expression(alpha))+ylab("Alpha Rank of Node's Degree")
+      plt<-plt+geom_line()+geom_point()+geom_dl(aes(label = vertex_name), method = list(dl.combine("first.points", "last.points"), cex = 1.5))+theme_bw()+theme(legend.position="none")+xlab(expression(alpha))+ylab("Alpha Rank of Node's Degree")
       plt
     }
   }
