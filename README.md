@@ -20,7 +20,7 @@ Additionally, this package also contains (Upcoming) the two synthetically genera
 These networks mimic properties of SSNs consistently reported in literature and we recommend using these as test datasets for SSN metrics.
 
 ### Network Requirement
-These metrics are desined for SSNs where the X, Y location on the nodes are attached as attributes of the nodes.
+These metrics are desined for SSNs where the X, Y location of the nodes are attached as attributes of the nodes.
 
 The workings of the package are heavily dependednt on the excellent igraph package. The networks thus should in the format of an igraph.
 
