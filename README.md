@@ -7,7 +7,7 @@ The mterics and visualization provided this package are as follows:
 1. Network Level
     * Socio-Spatial Network Schema (SS-NS)
     * FLattening Ration (Upcoming)
-2. Network Level
+2. Node Level
     * SS Tuning parameter for Modified Centality Metrics, namely:
       + SS Degree
       + SS Betweenness
