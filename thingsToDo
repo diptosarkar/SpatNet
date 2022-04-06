@@ -1,0 +1,8 @@
+How to make it work:
+1. Removed importing check_spatial_clustering function
+  This is causing an error as Kest cannot be imported from spatstat. Probably spatstat was updated
+2. Need to expose flattening ratio
+3.Need to update sp to sf
+  Probably will fix 1
+4. Change data.table to tibble (dplyr)
+  Will work for most things. Only some things are using data.table specific aggregation functions
