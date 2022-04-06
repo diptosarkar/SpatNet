@@ -3,7 +3,7 @@
 export(add_edge_dist_attrib)
 export(check_connection_distance_distribution)
 export(check_spatial_attribs)
-export(check_spatial_clustering)
+# export(check_spatial_clustering)
 export(export_shp_SpatNet)
 export(flatting_ratio)
 export(k_fulfillment)
