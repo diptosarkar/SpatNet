@@ -1,0 +1,22 @@
+Package: SpatNet
+Type: Package
+Title: Spatial Social Networks
+Version: 0.1.0
+Authors@R: person("Dipto", "Sarkar", email = "dipto.sarkar@mail.mcgill.ca", role = c("aut", "cre"))
+Maintainer: Dipto Sarkar <dipto.sarkar@mail.mcgill.ca>
+Description: Visualization and analytic metrics for spatial social networks.
+License: Apache-2.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+BugReports: https://github.com/diptosarkar/SpatNet/issues
+Imports:
+    igraph,
+    ggplot2,
+    ggbeeswarm,
+    spatstat,
+    directlabels,
+    maptools,
+    sp,
+    FastKNN,
+    data.table
