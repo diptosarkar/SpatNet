@@ -29,10 +29,8 @@ The workings of the package are heavily dependednt on the excellent igraph packa
 ### The documentation of this package is under active development to make it easier to use
 
 ## Basic Usage
-UPCOMING
+library(devtools)
+install_github("diptosarkar/SpatNet") #ref='dev' can be added when onstalling from any other branch (e.g. dev)
+library(SocialSpatialNetwork) #Load the package
+spatial_sociogram(g) #Create spatial sociogram
 
-library(SpatNet)
-
-
-## Known Issues
-UPCOMING
