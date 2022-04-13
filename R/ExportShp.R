@@ -11,7 +11,7 @@ export_shp_SpatNet<-function(graph, projstr=CRS("+init=epsg:3395")){
   if(check_spatial_attribs(graph)){
     ## Create SpatialPoints object containing coordinates
     xV <- SpatialPoints(cbind(V(graph)$X, V(graph)$Y), proj4string = projstr)
-    xV <- SpatialPointsDataFrame(cbind(V(graph)$X, V(graph)$Y), data.frame(ID=seq(1:vcount(graph))), proj4string = projstr)
+    xV <- SpatialPointsDataFrame(cbind(V(graph)$X, V(graph)$Y), data.frame(ID=seq(1:vcount(graph)), Name=V(graph)$name), proj4string = projstr)
 
     ## Write vertices to a shapefile
     dir.create("shp")
