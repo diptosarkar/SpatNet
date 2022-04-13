@@ -26,8 +26,6 @@ These metrics are designed for SSNs where the X, Y location of the nodes are att
 
 The workings of the package are heavily dependent on the excellent igraph package. The networks thus should in the format of an igraph.
 
-### The documentation of this package is under active development to make it easier to use
-
 ## Basic Usage
 ```
 library(devtools)
@@ -54,5 +52,7 @@ structure_viz(g)
 structure_viz(g, resolution = F, num=F) #TT and FF works. resolutions needs a number. Not sure whether Km or m
 
 
-
 ```
+
+## Known issues:
+Pleas have a look at the issue tracker for known issues. If you can fix them, please go ahead. Your help is much appreciated.
