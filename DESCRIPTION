@@ -1,4 +1,4 @@
-Package: SpatNet
+Package: SocialSpatialNetwork
 Type: Package
 Title: Spatial Social Networks
 Version: 0.1.0
@@ -18,5 +18,5 @@ Imports:
     directlabels,
     maptools,
     sp,
-    FastKNN,
+    crayon,
     data.table

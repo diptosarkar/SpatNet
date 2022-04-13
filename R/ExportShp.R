@@ -1,21 +1,17 @@
-#' Export spatial social network as a point and a line shapefiles in a folder called shp inside the working directory. The shapefiles are not projected.
-#'
-#' This function exports the nodes and edges making up the spatial social network as a point and a line shapefile respectively
-#' @param graph igraph object with V(g)$X and V(g)$Y having the X and Y co-ordinates of each node
-#' @param projstr projection string for the input co-ordinates. Defaults to CRS("+init=epsg:3395").
-#'
-#' @keywords: spatial sociogram
 #' @import igraph data.table maptools sp
 #' @export
-#' @examples
-#'
-
 
 export_shp_SpatNet<-function(graph, projstr=CRS("+init=epsg:3395")){
+
+  require(igraph)
+  require(data.table)
+  require(maptools)
+  require(sp)
+
   if(check_spatial_attribs(graph)){
     ## Create SpatialPoints object containing coordinates
     xV <- SpatialPoints(cbind(V(graph)$X, V(graph)$Y), proj4string = projstr)
-    xV <- SpatialPointsDataFrame(cbind(V(graph)$X, V(graph)$Y), data.frame(ID=seq(1:vcount(graph))), proj4string = projstr)
+    xV <- SpatialPointsDataFrame(cbind(V(graph)$X, V(graph)$Y), data.frame(ID=seq(1:vcount(graph)), Name=V(graph)$name), proj4string = projstr)
 
     ## Write vertices to a shapefile
     dir.create("shp")
@@ -33,7 +29,6 @@ export_shp_SpatNet<-function(graph, projstr=CRS("+init=epsg:3395")){
       startNode_X<-V(graph)[name==startNode]$X
       startNode_Y<-V(graph)[name==startNode]$Y
 
-
       endNode<-edges[i]$v2
       endNode_X<-V(graph)[name==endNode]$X
       endNode_Y<-V(graph)[name==endNode]$Y
@@ -48,6 +43,6 @@ export_shp_SpatNet<-function(graph, projstr=CRS("+init=epsg:3395")){
     writeLinesShape(xE, fn="shp/edges")
 
   }else{
-    stop("Either X and Y data for nodes if missing or there is something wrong with the X and Y data")
+    stop("Either (X,Y) data for nodes is missing, or there is an error with the (X,Y) data")
   }
 }
